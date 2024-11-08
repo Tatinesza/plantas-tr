@@ -1,0 +1,29 @@
+#contenedor{
+    display: flex;
+}
+.elemento{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+#e1{
+background-color: rgb(56, 64, 206);
+}
+#e2{
+background-color: rgb(108, 124, 225);
+}
+
+#e3{
+    background-color: rgb(99, 178, 19);
+    
+}
+#
+
+
+
+
+
+
+
+
+
