@@ -1,23 +1,44 @@
 #contenedor{
     display: flex;
+    border: 10px dotted magenta;
 }
 .elemento{
     height: 100px;
     width: 100px;
     margin: auto;
+    border: 5px solid black;
+    border-radius: 20%;
+    padding: 1%;
+    text-align: center;
+    
+
+    
+    
 }
 #e1{
 background-color: rgb(56, 64, 206);
+border: 5px rgb(255, 0, 187) solid;
+    border-radius: 20%;
+
 }
 #e2{
 background-color: rgb(108, 124, 225);
+border: 5px rgb(188, 17, 51) solid;
+border-radius: 50%;
+}
+
+#e2:hover{
+    background-color: rgb(108, 225, 194);
+    border: 5px rgb(5, 60, 13) solid;
 }
 
 #e3{
     background-color: rgb(99, 178, 19);
     
 }
-
+h1{
+    color: rgb(49, 91, 6);
+}
 
 
 
