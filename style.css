@@ -1,6 +1,7 @@
 #contenedor{
     display: flex;
     border: 10px dotted magenta;
+    padding: 20px;
 }
 .elemento{
     height: 100px;
@@ -8,23 +9,20 @@
     margin: auto;
     border: 5px solid black;
     border-radius: 20%;
-    padding: 1%;
+    padding: 5%;
     text-align: center;
-    
-
-    
     
 }
 #e1{
 background-color: rgb(56, 64, 206);
 border: 5px rgb(255, 0, 187) solid;
-    border-radius: 20%;
+    border-radius: 5%;
 
 }
 #e2{
 background-color: rgb(108, 124, 225);
 border: 5px rgb(188, 17, 51) solid;
-border-radius: 50%;
+border-radius: 20%;
 }
 
 #e2:hover{
@@ -36,8 +34,29 @@ border-radius: 50%;
     background-color: rgb(99, 178, 19);
     
 }
+.elemento img {
+    height: 50px;
+}
 h1{
     color: rgb(49, 91, 6);
+}
+nav {
+    background-color: aqua;
+    padding: 15px;
+}
+nav ul{
+    display: flex; /* pone elementos dentro de ul horizontal */
+    list-style:none; /*quita el punto de la lista */
+}
+nav ul li{
+    margin: auto; /* pone margenes a los li, repartiendo */
+    text-transform: uppercase;
+    color: rgb(8, 80, 42);
+    background-color: rgb(176, 138, 213);
+    padding: 10px;
+    border-radius: 7%;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
