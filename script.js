@@ -1,5 +1,6 @@
-//alert() muestra lo que pongamos en la consola
-/*alert("Hola mundo");
+/*
+//alert() muestra una ventana emergente
+alert("Hola mundo");
 alert(1+9+41);
 alert("1+9+41");*/
 
@@ -16,21 +17,23 @@ let despedida;
 
 //rellenar variable
 despedida = "Adios";
+
 //igualar una variable a otra
 saludo = despedida;
 
 /*
 //operaciones numericas
-alert(1+2); //sumar
-alert(1-2); //restar
-alert(12/2); // dividir
-alert(8*2); //multiplicar
-alert(8%2); //resto de division
+alert(1+2); //Sumar
+alert(1-2); //Restar
+alert(12/2); //Dividir
+alert(8*2); //Multiplicar
+alert(8%2); //Resto de division
 */
 
-let edad =16;
-edad =17;
-edad +1;
+let edad = 16;
+edad = 17;
+edad = edad + 1; //puedo sumar a la variable porque guarda un valor numérico
+edad += 5;
 edad++; //suma uno
 edad--; //resta uno
 
@@ -43,15 +46,60 @@ saludo = "hola";
 
 
 let nombreUsuario = "Tatinesza";
-saludo+=nombreUsuario;
+saludo += nombreUsuario;
 //alert(saludo+nombreUsuario); 
 //alert(saludo);
 
-alert(saludo+" "+nombreUsuario); //puedo concatenar strings usando +
+alert(saludo + " " + nombreUsuario); //puedo concatenar strings usando +
 //alert(saludo);
 
 //constantes
-const SALUDO_USUARIO = saludo+nombreUsuario;
+const SALUDO_USUARIO = "Hola de nuevo" + nombreUsuario; //"Hola de nuevo Tatisneza"
+//no se puede cambiar el valor de las constantes
+
+// Operadores Lógicos;
+console.log(5 > 4); //mayor que
+console.log(5 < 8); //menor que 
+
+console.log(5 >= 6); //igual o menor que
+console.log(5 <= 7); //menor o igual
+
+console.log(5 == 5); //igual que
+console.log(5 != 7); //no es igual
+
+console.log("a" > "b");
+
+if (edad>=18) {
+    alert("Eres mayor de edad");
+    
+}
+if (edad >=18) {
+    console.log("eres mayor de edad");
+}else{
+    console.log("no eres mayor de edad");
+}
+
+let premiun = true;
+if (premiun) {
+    console.log("tienes cuenta premiun"); //si es premiun
+alert("Bienvenido "+nombreUsuario)
+
+  
+}else if(edad>=18){
+    console.log("puedes creaar una cuenta");
+}else{
+    ("no puedes crear una cuenta");
+}
+
+
+//interactuar con html DOM
+//     recojo el elemento      // que hago //
+document.getElementById("texto").innerHTML = "Holaaaaaa"+nombreUsuario;
+
+document.getElementsByClassName("articulo")  
+
+
+
 
 
 
