@@ -14,13 +14,16 @@
 <body>
     <div id="contenedor">
         <div class="elemento" id="e1">
-            <p>Hola</p>
+            <p>Hola buenos dias</p>
         </div>
         <a href=""></a>
         <div class="elemento" id="e2">
+            <p>Feliz dia</p>
 
         </div>
-        <div class="elemento" id="e3"></div>
+        <div class="elemento" id="e3">
+            <p>Vamos poco a poco</p>
+        </div>
     </div>
 
     <nav>
@@ -55,21 +58,21 @@
                 </ul>
             </li>
             <li>Javascript
-            <ul class="submenu">
-                
-                <a href="#teoria-javascript">
-                    <li>Teoría</li>
-                </a>
-                <a href="#ejemplos-javascript">
-                    <li>Ejemplos</li>
-                </a>
-                <a href="#ejercicios-javascript">
-                    <li>Ejercicios</li>
-                </a>
-            </ul>
+                <ul class="submenu">
+
+                    <a href="#teoria-javascript">
+                        <li>Teoría</li>
+                    </a>
+                    <a href="#ejemplos-javascript">
+                        <li>Ejemplos</li>
+                    </a>
+                    <a href="#ejercicios-javascript">
+                        <li>Ejercicios</li>
+                    </a>
+                </ul>
             </li>
 
-        </li>
+            </li>
 
         </ul>
     </nav>
@@ -77,6 +80,12 @@
     <header>
         <h1 style="color: rgb(91, 171, 12);">Vida a traves de las plantas</h1>
     </header>
+    <button onclick="saludar()">Saludar</button>
+    <button onclick="modoNoche()">Modo Noche</button>
+    <button onclick="modoDia()">Modo Dia</button>
+
+    <p id="texto"></p>
+    <div id="=caja"></div>
 
     <h1>Plantas</h1>
 
@@ -92,53 +101,99 @@
         <hr>
         <section>
             <h1 id="plantas de interior">Plantas de interior</h3>
-                <img src="https://img.freepik.com/foto-gratis/plantas-interior-estudio_23-2151022062.jpg?t=st=1731321245~exp=1731324845~hmac=570d397dc69859a14a8eba448e26ac5f039dda02a6ea36a63ce3fb2d132a9b52&w=1060"
-                    alt="imagen plantas de interior" height="200px">
-                <article>
-                    <p><strong>En el mundo vegetal, la comunicación entre plantas es un fenómeno fascinante y
-                            complejo.</strong> Aunque a simple vista puedan parecer seres estáticos, las plantas han
-                        desarrollado ingeniosos mecanismos de comunicación basados en señales químicas. Estas señales,
-                        conocidas como compuestos orgánicos volátiles (VOCs), son liberadas al aire y transportadas por
-                        el viento. Los VOCs pueden variar en su composición y pueden incluir moléculas como terpenos,
-                        aldehídos, alcoholes y ésteres. Cada especie de planta puede tener una combinación única de VOCs
-                        que le permite comunicarse de manera específica con otras plantas y con el entorno.</p>
+                <div>
+                    <img src="https://img.freepik.com/foto-gratis/plantas-interior-estudio_23-2151022062.jpg?t=st=1731321245~exp=1731324845~hmac=570d397dc69859a14a8eba448e26ac5f039dda02a6ea36a63ce3fb2d132a9b52&w=1060"
+                        alt="imagen plantas de interior" height="200px">
+                    <article>
+                        <p><strong>En el mundo vegetal, la comunicación entre plantas es un fenómeno fascinante y
+                                complejo.</strong> Aunque a simple vista puedan parecer seres estáticos, las plantas han
+                            desarrollado ingeniosos mecanismos de comunicación basados en señales químicas. Estas
+                            señales,
+                            conocidas como compuestos orgánicos volátiles (VOCs), son liberadas al aire y transportadas
+                            por
+                            el viento. Los VOCs pueden variar en su composición y pueden incluir moléculas como
+                            terpenos,
+                            aldehídos, alcoholes y ésteres. Cada especie de planta puede tener una combinación única de
+                            VOCs
+                            que le permite comunicarse de manera específica con otras plantas y con el entorno.</p>
 
+                </div>
                 </article>
+                <hr>
+                <hr>
         </section>
-        <hr>
-        <hr>
         <section>
             <h1 id="plantas de exterior">Plantas de exterior</h3>
-                <img src="https://www.jardineriaon.com/wp-content/uploads/2021/07/plantas-con-flores-de-exterior.jpg"
-                    alt="imagen plantas de exterior" height="200px">
-                <article>
-                    <p>Tener plantas de exterior resistentes para todo el año es una de las prioridades de los amantes de la jardinería. Una forma de poder disfrutar del jardín, la terraza o simplemente del balcón más allá de los meses de buen tiempo. Pero poder deleitarnos la vista con plantas no es el único motivo para apostar por esas variedades de plantas que nos acompañarán tanto con frío como con calor. Añadido, contar con ellas es también la manera más económica de mantener nuestro exterior y evitarnos tener que reponer plantas que se estropeen por las temperaturas.</p>
+                <div>
+                    <img src="https://www.jardineriaon.com/wp-content/uploads/2021/07/plantas-con-flores-de-exterior.jpg"
+                        alt="imagen plantas de exterior" height="200px">
+                    <article>
+                        <p>Tener plantas de exterior resistentes para todo el año es una de las prioridades de los
+                            amantes
+                            de la jardinería. Una forma de poder disfrutar del jardín, la terraza o simplemente del
+                            balcón
+                            más allá de los meses de buen tiempo. Pero poder deleitarnos la vista con plantas no es el
+                            único
+                            motivo para apostar por esas variedades de plantas que nos acompañarán tanto con frío como
+                            con
+                            calor. Añadido, contar con ellas es también la manera más económica de mantener nuestro
+                            exterior
+                            y evitarnos tener que reponer plantas que se estropeen por las temperaturas.</p>
+                </div>
                 </article>
                 <hr>
                 <hr>
         </section>
         <section>
             <h1 id="plantas tropicales">Plantas tropicales</h1>
-            <img src="https://i.pinimg.com/originals/e5/51/3e/e5513e3fea3130b8b83fb911712344e6.jpg" alt="imagen de plantas tropicales" height="200px">
-            <article>
-                <p>Hay una amplia gama de plantas tropicales que se adaptan bien al cultivo exterior, cada una con su propio atractivo único. Desde la majestuosa belleza de las palmeras hasta la atrevida y colorida presencia de las flores de hibisco, pasando por las exuberantes hojas de gran tamaño de las plataneras, las opciones son realmente diversas.
+            <div>
+                <img src="https://i.pinimg.com/originals/e5/51/3e/e5513e3fea3130b8b83fb911712344e6.jpg"
+                    alt="imagen de plantas tropicales" height="200px">
+                <article>
+                    <p>Hay una amplia gama de plantas tropicales que se adaptan bien al cultivo exterior, cada una con
+                        su
+                        propio atractivo único. Desde la majestuosa belleza de las palmeras hasta la atrevida y colorida
+                        presencia de las flores de hibisco, pasando por las exuberantes hojas de gran tamaño de las
+                        plataneras, las opciones son realmente diversas.
 
-                    Además, plantas como el ave del paraíso, la buganvilla y el frangipani son opciones populares para quienes buscan crear un paisaje exterior impresionante y exótico.</p>
+                        Además, plantas como el ave del paraíso, la buganvilla y el frangipani son opciones populares
+                        para
+                        quienes buscan crear un paisaje exterior impresionante y exótico.</p>
+            </div>
             </article>
             <hr>
             <hr>
-            
+
         </section>
         <section>
             <h1 id="plantas de invernadero">Plantas de invernadero</h1>
-            <img src="https://i2.wp.com/icasasecologicas.com/wp-content/uploads/2019/01/plantar-en-un-invernadero.jpg?fit=550,550&ssl=1" alt="imagen de invernadero" height="200px">
-        <article>
-            <p></p>
-        </article>
-        
+            <div>
+                <img src="https://i2.wp.com/icasasecologicas.com/wp-content/uploads/2019/01/plantar-en-un-invernadero.jpg?fit=550,550&ssl=1"
+                    alt="imagen de invernadero" height="200px">
+                <article>
+                    <p>Un invernadero siempre será un buen recurso para un jardinero y es apropiado para el jardín, el
+                        mirador o la terraza. Sigue leyendo para conocer las plantas de invernadero más bonitas que
+                        pueden
+                        cultivarse durante todo el año.
+                        Un invernadero pequeño puede ser utilizado para cultivar plantas de invernadero de verano.
+                        También
+                        podrás conseguir pimientos, tomates y berenjenas, y tal vez algunas plantas de maceta de esas
+                        que
+                        suelen florecer en primavera como las Cinerarias y Prímulas. Si te encantan las flores puedes
+                        intentar obtenerlas a partir de algunos grupos de primavera como el Jacinto, el Tulipán y el
+                        Narciso. Estos deben plantarse en un cuenco o en otoño e introducirse en invernadero solamente
+                        cuando las raíces estén muy bien desarrolladas y los brotes lleguen a alcanzar los 2,5 cm.
+                        Si no posees calefacción en tu invernadero, puedes cultivar tomates, berenjenas y pimientos.
+                        Compra
+                        plantas jóvenes y plántalas a mediados de mayo, una vez han corrido el riesgo de heladas.
+                    </p>
+            </div>
+            </article>
+            <hr>
+            <hr>
+
         </section>
-        <button>Saludar</button>
-        <p id="texto"></p>
+       
 
         <script src="script.js"></script>
 </body>
