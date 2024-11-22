@@ -118,6 +118,10 @@ function modoNoche() {
         document.body.style.backgroundColor = "white";
     
     }
+    function saludarUsuario(){
+      let imputUsuario = document.querySelector("#nombre-usuario").value
+      alert("Hola buenos dias "+imputUsuario);  
+    }
 
 
 
