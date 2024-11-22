@@ -72,6 +72,9 @@ console.log(5 != 7); //no es igual
 console.log("a" > "b");
 console.log("Cortazar" > "Navarro");
 
+let buleano = 4 <2; // el valor que devuelve es un boolean
+console.log(buleano);
+
 //Condicionales
 if (edad >= 18) {
     //alert("Eres mayor de edad");
@@ -96,11 +99,11 @@ if (premiun) {
 
 
 //interactuar con html DOM
+//Selectores
 //     recojo el elemento      // que hago //
 document.getElementById("texto").innerHTML = "Holaaaaaa" + nombreUsuario;
-
-document.getElementsByClassName("articulo")
-document.body.style.color ="blue";
+document.getElementsByClassName("caja")
+document.body.style.color = "blue";
 
 //Funciones
 function saludar () {
@@ -113,6 +116,7 @@ function modoNoche() {
     function modoDia() {
         document.body.style.color ="black";
         document.body.style.backgroundColor = "white";
+    
     }
 
 
