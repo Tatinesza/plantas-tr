@@ -66,13 +66,13 @@ console.log(5 >= 6); //mayor o igual que
 console.log(5 <= 7); //menor o igual que
 
 console.log(5 == 5); //igual que
-console.log( 5=== "5"); //estrictamente igual que (compara )
+console.log(5 === "5"); //estrictamente igual que (compara )
 console.log(5 != 7); //no es igual
 
 console.log("a" > "b");
 console.log("Cortazar" > "Navarro");
 
-let buleano = 4 <2; // el valor que devuelve es un boolean
+let buleano = 4 < 2; // el valor que devuelve es un boolean
 console.log(buleano);
 
 //Condicionales
@@ -106,22 +106,33 @@ document.getElementsByClassName("caja")
 document.body.style.color = "blue";
 
 //Funciones
-function saludar () {
+function saludar() {
     alert("Bienvenido");
 }
 function modoNoche() {
     document.body.style.color = "white";
-    document.body.style.backgroundColor ="black";
- }   
-    function modoDia() {
-        document.body.style.color ="black";
-        document.body.style.backgroundColor = "white";
-    
+    document.body.style.backgroundColor = "black";
+}
+function modoDia() {
+    document.body.style.color = "black";
+    document.body.style.backgroundColor = "white";
+
+}
+function saludarUsuario() {
+    let inputUsuario = document.querySelector("#nombre-usuario").value
+    let generoFemenino = document.getElementById("femenino")
+    let generoMasculino = document.getElementById("masculino")
+
+    if (generoFemenino.checked) {
+        alert("Bienvenida " + inputUsuario);
+    } else if (generoMasculino.checked) {
+        alert("Bienvenido " + inputUsuario);
+    } else {
+        alert("Hola de nuevo " + inputUsuario);
     }
-    function saludarUsuario(){
-      let imputUsuario = document.querySelector("#nombre-usuario").value
-      alert("Hola buenos dias "+imputUsuario);  
-    }
+
+
+}
 
 
 
