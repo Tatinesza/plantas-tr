@@ -98,6 +98,8 @@ if (premiun) {
 }
 
 
+
+
 //interactuar con html DOM
 //Selectores
 //     recojo el elemento      // que hago //
@@ -130,6 +132,20 @@ function saludarUsuario() {
     } else {
         alert("Hola de nuevo " + inputUsuario);
     }
+
+    mostrarUsuario(inputUsuario);
+
+}
+    function mostrarUsuario(inputUsuario){
+    const contenedorUsuarios = document.querySelector("#contenedor-usuarios")
+    const elementoUsuario = document.createElement("li")
+
+    //Ejemplos de usar texto + datos js
+    //elementoUsuario.innerHTML = "hola "+inputUsuario;
+    //elementoUsuario.innerHTML = `hola ${inputUsuario}`;
+    
+    elementoUsuario.innerHTML = inputUsuario;
+    contenedorUsuarios.appendChild(elementoUsuario);
 
 
 }
